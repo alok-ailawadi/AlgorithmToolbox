@@ -10,6 +10,8 @@ public class Fib {
 
     private static long calc_fib_optimized(int n)
     {
+        if(n==0)
+            return 0;
         long fib[] = new long[n+1];
         fib[0] = 0;
         fib[1] =1;
